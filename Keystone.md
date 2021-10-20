@@ -288,4 +288,4 @@ Hình dưới đây là bản tóm tắt cho các services và backends đi kèm
 <img src="http://i.imgur.com/cf8VpxI.png">
 
 
-CREDIT: MEDITECH
+CREDIT: https://github.com/meditechopen/meditech-ghichep-openstack (by Meditech)
