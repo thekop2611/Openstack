@@ -1,5 +1,6 @@
 ### Bước 1:
 Download image từ Internet:
+
 wget https://mirror.vinahost.vn/centos/8.4.2105/isos/x86_64/CentOS-8.4.2105-x86_64-boot.iso
 ### Bước 2:
 Upload image lên Openstack:
