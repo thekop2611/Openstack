@@ -6,6 +6,7 @@ wget https://mirror.vinahost.vn/centos/8.4.2105/isos/x86_64/CentOS-8.4.2105-x86_
 Upload image lên Openstack:
 source /root/admin-openrc
 openstack image create "Centos8"  --file CentOS-8.4.2105-x86_64-boot.iso --disk-format iso --container-format bare --public --debug
+
 Kết quả như sau:
 ![image](https://user-images.githubusercontent.com/44855268/138828498-bcdeace0-aeef-48e1-a1e9-3a1deb6fa332.png)
 
