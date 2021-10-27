@@ -9,7 +9,7 @@
 7. Tạo bản ghi thông tin về VM trong DB và trả về kết quả cho nova-api
 8. nova-api gửi đưa thông tin tạo VM vào hàng đợi để create
 9. nova-scheduler lấy thông tin VM từ hàng đợi
-10.nova-scheduler giao tiếp với DB để tính toán host để tạo VM dựa trên thông tin về VM cần tạo và tài nguyên còn lại của các host
+10. nova-scheduler giao tiếp với DB để tính toán host để tạo VM dựa trên thông tin về VM cần tạo và tài nguyên còn lại của các host
 11. DB trả kết quả về cho nova-scheduler sau khi tính toán.
 12. nova-scheduler gửi thông tin vừa nhận được đến hàng đợi
 13. nova-compute lấy request từ hàng đợi với các thông tin về VM và host để đặt VM
