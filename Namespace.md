@@ -1,4 +1,5 @@
 1. Đầu tiên check ip link và ip address, ip route
+
 	ip link
   
   ![ip link 1](https://user-images.githubusercontent.com/44855268/139041447-2cb82a63-17b0-474b-abba-ac78d714cb33.PNG)
@@ -13,13 +14,18 @@
 
 2. Tạo 2 namespace red và green 
 
-	ip netns exec add red/green
+	ip netns exec add red
+	ip netns exec add green
   
   ![add green red](https://user-images.githubusercontent.com/44855268/139041582-e1c8b07a-519b-4f5f-a0d1-24366ea9e30a.PNG)
 	
-	ip netns để check
+	ip netns
 	
-	ip netns exec red/green ip link (gán ip link cho các namespace)
+	Gán ip link cho các namespace
+	
+	ip netns exec red ip link
+	
+	ip netns exec green ip link
   
   ![ip netns red green ip link](https://user-images.githubusercontent.com/44855268/139041691-09c2b940-d25a-4390-90f6-7e106056020c.PNG)
 
@@ -27,7 +33,7 @@
 	
 	ovs-vsctl add-br OVS1
   
-	ovs-vsctl show (để check)
+	ovs-vsctl show
   
   ![OVS1 add-br](https://user-images.githubusercontent.com/44855268/139041795-025ad9cb-4b1f-4059-a8c5-f343b6990f52.PNG)
 
