@@ -4,7 +4,7 @@
 	
 	ovs-vsctl set port veth-g tag=200
 	
-# 2. Xoá các network đã set cho các namespace ở phần 1
+# 2. Xoá các IP đã set cho namespace ở phần 1
 
 	ip netns exec red ip address del 10.0.0.1/24 dev eth0-r
 	
@@ -65,9 +65,14 @@
 	
 # 8. Check kết quả
 	
-	ps -ef | grep dns
+	* Chạy dhclient cho port eth0-r của red namespace
 	
-	Kết quả đạt yêu cầu như sau
+	ip netns exec red dhclient eth0-r
 	
-	![image](https://user-images.githubusercontent.com/44855268/139177295-9ffecf01-01aa-4867-b665-4aa8b019b5ed.png)
+	* Check kết quả IP được nhận
+	
+	ip netns exec red ip a
+	
+	![image](https://user-images.githubusercontent.com/44855268/139181848-e6121d76-b375-4586-ad27-2f57224c804d.png)
+
 
