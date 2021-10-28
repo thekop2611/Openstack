@@ -19,13 +19,13 @@
 
 4. Để kết nối với 2 DHCP namespace dùng internal port
 
-	Tạo 2 internal port tap-g và tap-r
+	- Tạo 2 internal port tap-g và tap-r
 	
 	ovs-vsctl add-port OVS1 tap-g -- set Interface tap-g type=internal
 	
 	ovs-vsctl add-port OVS1 tap-r -- set Interface tap-r type=internal
 	
-	Gắn tag cho 2 port tap-r và tap-g
+	- Gắn tag cho 2 port tap-r và tap-g
 	
 	ovs-vsctl set port tap-r tag=100
 	
