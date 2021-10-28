@@ -67,7 +67,8 @@
 	
 	ps -ef | grep dns
 	
-	![image](https://user-images.githubusercontent.com/44855268/139176966-f36760a1-a32c-4e5e-87c0-0c59cb347036.png)
+	Kết quả đạt yêu cầu như sau
+	
+	![image](https://user-images.githubusercontent.com/44855268/139177092-2bf3995c-fed1-40bb-8fd3-8407c76c6193.png)
 
 	
-	Kết quả đạt yêu cầu.
