@@ -21,7 +21,7 @@
 	
 	ip netns
 	
-	Gán ip link cho các namespace
+3. Gán ip link cho các namespace
 	
 	ip netns exec red ip link
 	
@@ -29,7 +29,7 @@
   
   ![ip netns red green ip link](https://user-images.githubusercontent.com/44855268/139041691-09c2b940-d25a-4390-90f6-7e106056020c.PNG)
 
-3. Add bridge OVS1
+4. Add bridge OVS1
 	
 	ovs-vsctl add-br OVS1
   
@@ -37,9 +37,9 @@
   
   ![OVS1 add-br](https://user-images.githubusercontent.com/44855268/139041795-025ad9cb-4b1f-4059-a8c5-f343b6990f52.PNG)
 
-4. Tạo cặp V-eth để kết nối các namespace tới switch
+5. Tạo cặp V-eth để kết nối các namespace tới switch
 	
-	Với red namespace
+	- Với red namespace
 	
 	ip link add eth0-r type veth peer name veth-r (tạo)
 	
@@ -50,7 +50,7 @@
   ![check red veth](https://user-images.githubusercontent.com/44855268/139041921-5da5a7ff-8cc3-4e7c-a18d-dea90ddaa1f2.PNG)
 
 	
-	Tương tự với green namespace
+	- Tương tự với green namespace
 	
 	ip link add etho-g type veth peer name veth-g
 	
@@ -59,7 +59,7 @@
   ![check all veth](https://user-images.githubusercontent.com/44855268/139042927-2ab40574-a9a5-4873-9aa2-36bf5cc9d559.PNG)
 
 	
-5. Gán đầu còn lại của cặp V-eth vào OVS
+6. Gán đầu còn lại của cặp V-eth vào OVS
   
   ovs-vsctl add-port OVS1 veth-r
   
@@ -67,7 +67,9 @@
   
   ![gán veth vào OVS1](https://user-images.githubusercontent.com/44855268/139042754-65ffd86e-6c3d-47b8-9421-f4d37652b87c.PNG)
 
-6. Up các interface và gán network cho namespace
+7. Up các interface và gán network cho namespace
+
+	- Với red namespace
 
 	ip netns exec red ip link set dev lo up
 	
@@ -80,9 +82,9 @@
   ![gán network cho red](https://user-images.githubusercontent.com/44855268/139042979-9986acb1-cc93-489b-aba9-8dedf09de229.PNG)
 
 	
-	Tương tự với green namespace
+	- Tương tự với green namespace
 	
-	Thử chuyển sang red và ping sang green
+	- Thử chuyển sang red và ping sang green
 	
 	ip netns exec red bash
 	
