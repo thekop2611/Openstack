@@ -69,5 +69,5 @@
 	
 	Kết quả đạt yêu cầu như sau
 	
-	![Capture](https://user-images.githubusercontent.com/44855268/139177211-f332cfa0-a191-4e5c-8bfd-d9220732c73a.PNG)
+	![image](https://user-images.githubusercontent.com/44855268/139177295-9ffecf01-01aa-4867-b665-4aa8b019b5ed.png)
 
