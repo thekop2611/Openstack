@@ -15,6 +15,7 @@
 2. Tạo 2 namespace red và green 
 
 	ip netns exec add red
+	
 	ip netns exec add green
   
   ![add green red](https://user-images.githubusercontent.com/44855268/139041582-e1c8b07a-519b-4f5f-a0d1-24366ea9e30a.PNG)
