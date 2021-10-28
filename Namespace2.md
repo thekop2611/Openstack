@@ -73,6 +73,7 @@
 	
 	ip netns exec red ip a
 	
-	<img src="https://user-images.githubusercontent.com/44855268/139181848-e6121d76-b375-4586-ad27-2f57224c804d.png">
+	![image](https://user-images.githubusercontent.com/44855268/139182206-fd006c9b-8b8c-4bce-83a5-4fea4ee330ed.png)
+
 
 
