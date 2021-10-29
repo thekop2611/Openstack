@@ -128,5 +128,25 @@
   
   ![image](https://user-images.githubusercontent.com/44855268/139373900-82d9f1d6-b7e0-44ea-bba5-66c7c8cb1419.png)
   
+### Traffic DHCP
+  
+  1. Create VM
+  
+  Khi có một request tạo VM, có một loạt các giao tiếp giữa nova tới glance, neutron để thực hiện tìm kiếm host, lấy IP, ... Sau khi các hành động trên thực thi xong, nova sẽ
+  
+  gọi tới hypervisor để khởi tạo. VM thực hiện khởi tạo sẽ xin cấp phát IP, ở bước này, DHCP namespace cấp IP cho VM và ghi lại thông tin.
+  
+  ![image](https://user-images.githubusercontent.com/44855268/139376227-03fea271-78e4-459c-9f8e-0d079c64d848.png)
+
+  2. Restart VM
+  
+  3. Traffic metadata
+  
+  Sau khi gửi gói tin DHCP xong, VM sẽ thực hiện gửi request để lấy thông tin metadata từ nova. Mỗi lần VM khởi động đều gửi gói tin yêu cầu này
+  
+  ![image](https://user-images.githubusercontent.com/44855268/139376644-2d6250de-18d9-41e6-af26-040dccc2d1de.png)
+
+  
+  
   
 
