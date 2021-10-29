@@ -107,3 +107,26 @@
   ![image](https://user-images.githubusercontent.com/44855268/139362608-c6553bcc-9f69-49ea-9128-d78dd2f5f542.png)
   
 ### Trên node controller
+  
+  1. Dữ liệu tới switch br-int
+  
+  ovs-vsctl show
+  
+  ![image](https://user-images.githubusercontent.com/44855268/139364699-b8fe74fb-7baf-4cd3-942b-09bf2d709746.png)
+
+  2. Bắt gói tin bằng tcp dump
+  
+  tcpdump -e -n -i eth0 | grep 192.0.2.85
+  
+  ![image](https://user-images.githubusercontent.com/44855268/139365314-0aeeeff2-b177-4745-8c15-3cc84a7b734f.png)
+
+  3. Dump flow table trên br-int
+  
+  ![image](https://user-images.githubusercontent.com/44855268/139365750-0fbd3a7c-b557-4420-8ee6-c07127eed6d7.png)
+
+  4. Dữ liệu đi vào tap interface tới DHCP namespace
+  
+  ![image](https://user-images.githubusercontent.com/44855268/139373900-82d9f1d6-b7e0-44ea-bba5-66c7c8cb1419.png)
+  
+  
+
