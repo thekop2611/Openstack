@@ -140,6 +140,10 @@
 
   2. Restart VM
   
+  Ở lần khởi động lại VM, VM vẫn thực hiện gửi gói tin DHCP, nhưng lần này kèm theo một gói tin release để cấp lại IP cũ
+  
+  ![image](https://user-images.githubusercontent.com/44855268/139377735-7e9a5915-5be6-4ef6-872a-4e214ebd24b7.png)
+
   3. Traffic metadata
   
   Sau khi gửi gói tin DHCP xong, VM sẽ thực hiện gửi request để lấy thông tin metadata từ nova. Mỗi lần VM khởi động đều gửi gói tin yêu cầu này
