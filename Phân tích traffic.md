@@ -1,6 +1,12 @@
 # Phân tích traffic
 ## VM tới DHCP
+
+![image](https://user-images.githubusercontent.com/44855268/139409152-a86a8d3d-50cb-4618-9f07-475a0d39c5ac.png)
+
 ### Trên node compute
+
+![image](https://user-images.githubusercontent.com/44855268/139408879-6c6a55a5-6dbe-49f1-b68b-8e2b131f4a16.png)
+
   1. Xem port tap của VM
   
       [root@compute qemu]# cat instance-0000000a.xml
@@ -108,6 +114,8 @@
   
 ### Trên node controller
   
+  ![image](https://user-images.githubusercontent.com/44855268/139408985-166cf733-f45f-4fe1-ad6d-52f71c3b1fb2.png)
+
   1. Dữ liệu tới switch br-int
   
   ovs-vsctl show
