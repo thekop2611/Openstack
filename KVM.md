@@ -1,4 +1,4 @@
-### Tạo KVM bằng câu lệnh
+### Tạo VM bằng câu lệnh
 ## Bước 1: Check phần cứng có hỗ trợ ảo hoá
 
     - Chạy câu lệnh sau:
