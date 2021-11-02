@@ -49,12 +49,17 @@
     
   ![image](https://user-images.githubusercontent.com/44855268/139801033-5ffdf96b-3f04-4388-94c1-9fac86d25019.png)
     
- ## Bước 5: Kiểm tra file XML của VM
+## Bước 5: Kiểm tra file XML của VM
  
     virsh edit testkvm
     
   ![image](https://user-images.githubusercontent.com/44855268/139801849-21cef19e-a080-493b-ba6b-0385ab2691d9.png)
 
+## Bước 6: Connect đến VM
+
+    virsh console Server1
+    
+    ![image](https://user-images.githubusercontent.com/44855268/139803104-104cd314-38f4-4d17-8f2d-a007fa19c115.png)
 
     
 
