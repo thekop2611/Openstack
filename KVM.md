@@ -5,7 +5,7 @@
     
     cat /proc/cpuinfo
     
-    ![image](https://user-images.githubusercontent.com/44855268/139798874-2197a6eb-c3ef-44f7-93a8-3be0edadba19.png)
+  ![image](https://user-images.githubusercontent.com/44855268/139798874-2197a6eb-c3ef-44f7-93a8-3be0edadba19.png)
     
     Trường flag có vmx là đạt yêu cầu
     
@@ -13,7 +13,7 @@
     
     lsmod | grep kvm
     
-    ![image](https://user-images.githubusercontent.com/44855268/139799080-677407e1-76a4-4f20-8309-08742940327a.png)
+  ![image](https://user-images.githubusercontent.com/44855268/139799080-677407e1-76a4-4f20-8309-08742940327a.png)
 
 ## Bước 2: Cài đặt các package cần thiết
 
@@ -33,7 +33,7 @@
     
     nmcli connection add type bridge-slave autoconnect yes con-name eth0 ifname eth0 master br0
     
-    ![image](https://user-images.githubusercontent.com/44855268/139800803-538034c9-96d9-4927-b857-1220f63e186d.png)
+  ![image](https://user-images.githubusercontent.com/44855268/139800803-538034c9-96d9-4927-b857-1220f63e186d.png)
 
  ## Bước 4: Tạo VM bằng câu lệnh
  
@@ -47,13 +47,13 @@
     
     virsh list
     
-    ![image](https://user-images.githubusercontent.com/44855268/139801033-5ffdf96b-3f04-4388-94c1-9fac86d25019.png)
+  ![image](https://user-images.githubusercontent.com/44855268/139801033-5ffdf96b-3f04-4388-94c1-9fac86d25019.png)
     
  ## Bước 5: Kiểm tra file XML của VM
  
     virsh edit testkvm
     
-    ![image](https://user-images.githubusercontent.com/44855268/139801849-21cef19e-a080-493b-ba6b-0385ab2691d9.png)
+  ![image](https://user-images.githubusercontent.com/44855268/139801849-21cef19e-a080-493b-ba6b-0385ab2691d9.png)
 
 
     
