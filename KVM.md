@@ -59,7 +59,7 @@
 
     virsh console Server1
     
-    ![image](https://user-images.githubusercontent.com/44855268/139803104-104cd314-38f4-4d17-8f2d-a007fa19c115.png)
+  ![image](https://user-images.githubusercontent.com/44855268/139803104-104cd314-38f4-4d17-8f2d-a007fa19c115.png)
 
     
 
