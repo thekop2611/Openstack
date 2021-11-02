@@ -61,7 +61,18 @@
     
   ![image](https://user-images.githubusercontent.com/44855268/139803104-104cd314-38f4-4d17-8f2d-a007fa19c115.png)
 
+    - Chạy câu lệnh sau để lấy IP của VM
     
+    hostname -I | tr " " "\n"
+    
+  ![image](https://user-images.githubusercontent.com/44855268/139804661-501422b9-f93f-4cd2-8c41-35884a27dc9f.png)
+
+    - Thử SSH vào server
+    
+    ssh cirros@10.0.0.30
+    
+  ![image](https://user-images.githubusercontent.com/44855268/139804766-56225f99-9de1-4726-b02c-538ff8099158.png)
+
 
  
     
