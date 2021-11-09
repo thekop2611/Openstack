@@ -1,7 +1,6 @@
 #!/bin/bash
-#Author Nguyen Trong Tan
 
-source function.sh
+
 source config.sh
 
 if [ $network_model = "provider" -o $network_model = "selfservice" ]
@@ -31,21 +30,13 @@ echocolor "Nova"
 source ctl-4.1-placement.sh
 source ctl-4-nova.sh
 
-if [ $network_model = "provider" ]
-then
-	echocolor "Neutron"
-	source ctl-5-neutron-provider.sh
 
-	echocolor "Horizon"
-	source ctl-6-horizon.sh provider
-elif [ $network_model = "selfservice" ]
-then
-	echocolor "Neutron"
-	source ctl-5-neutron-selfservice.sh
+echocolor "Neutron"
+source ctl-5-neutron.sh
 
-	echocolor "Horizon"
-	source ctl-6-horizon.sh selfservice
-fi
+echocolor "Horizon"
+source ctl-6-horizon.sh provider
+
 
 # echocolor "Create Network and Flavor"
 # source ctl-7-create_network.sh
