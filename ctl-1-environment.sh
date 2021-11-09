@@ -1,7 +1,6 @@
 #!/bin/bash
 #Author DucElGenio
 
-source function.sh
 source config.sh
 
 # Function update and upgrade for CONTROLLER
