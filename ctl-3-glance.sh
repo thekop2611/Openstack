@@ -1,7 +1,6 @@
 #!/bin/bash
 #Author DucElGenio
 
-source function.sh
 source config.sh
 
 # Function create database for Glance
