@@ -9,7 +9,7 @@ Loại 3 - Stagged Key: - tương tự như secondary key trong trường hợp 
 
 Quá trình xoay vòng khóa được mô tả như sau.
 
-![image](https://user-images.githubusercontent.com/44855268/140891630-f7c83b44-5f60-434b-a787-2e93cb28c3f6.png)
+![image](https://user-images.githubusercontent.com/44855268/141074882-9fa421a5-12c9-4b6f-921d-d0245b696fec.png)
 
 3.1. Quá trình sinh Fernet Token
 Giống như các loại token User phải gửi các thông tin định danh và xác thực để Keystone xác thức và cấp Token. Fernet token sử dụng hệ mã khóa đối xứng để ký và giải mã nên ta có thể thấy trong hình các thông tin của token được ký để tạo ra một Cipher Text ( Bản mã) kết hợp với HMAC để đảm bảo tính toàn vẹn và bí mật cho Token.
