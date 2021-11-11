@@ -11,13 +11,13 @@ Quá trình xoay vòng khóa được mô tả như sau.
 
 ![image](https://user-images.githubusercontent.com/44855268/141074882-9fa421a5-12c9-4b6f-921d-d0245b696fec.png)
 
-3.1. Quá trình sinh Fernet Token
+## Quá trình sinh Fernet Token
 Giống như các loại token User phải gửi các thông tin định danh và xác thực để Keystone xác thức và cấp Token. Fernet token sử dụng hệ mã khóa đối xứng để ký và giải mã nên ta có thể thấy trong hình các thông tin của token được ký để tạo ra một Cipher Text ( Bản mã) kết hợp với HMAC để đảm bảo tính toàn vẹn và bí mật cho Token.
 
-3.2. Quá trình validate Fernet Token
+## Quá trình validate Fernet Token
 Quá trình validate Fernet token cũng tương tự như các Token khác chỉ có một vài điểm khác ở giai đoạn đầu của quá trình validate service sẽ sử dụng khóa đối xứng để giải mã và lấy ra các thông tin của token như Current Time, Expiry Time ... để xác minh tính hợp lệ cuả Token.
 
-3.3. Quá trình thu hồi
+## Quá trình thu hồi
 Quá trình thu hồi hoàn toàn tương tự như các loại token khác.
 
 Trước khi thu hồi Fernet Token Keystone cần thực hiện bước Validate Token, khi Token được xác minh tính hợp lệ, keystone sẽ khởi tạo sự kiện thu hồi token và Update các thông tin cần thiết (User ID, Project ID, Rovoke At ...) vào bảng Revoke trong Database của keystone.
