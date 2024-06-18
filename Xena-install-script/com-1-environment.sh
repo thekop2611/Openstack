@@ -1,5 +1,5 @@
 #!/bin/bash
-#Author Nguyen Trong Tan
+#Author Duc El Genio
 
 source function.sh
 source config.sh
